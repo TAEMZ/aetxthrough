@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500&family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>student</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/eduford_img/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+      </nav>
+      <h1>Contact us</h1>
+    </section>
+    <!---------contacttus>-->
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63056.38155281326!2d38.739675840848584!3d8.969949384956658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85b915db8c8b%3A0xd8577380eddaf012!2z4YiY4Yi14YmA4YiNIOGKoOGLsOGJo-GJo-GLrQ!5e0!3m2!1sam!2set!4v1707220890945!5m2!1sam!2set"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+    </section>
+
+    <section class="contactus">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-Home"></i>
+            <span>
+              <h5>ttt Road, abf building</h5>
+              <p>Meskel square</p>
+            </span>
+          </div>
+
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>+251 98437460</h5>
+              <p>Monday to Saturday,10A to 6pm</p>
+            </span>
+          </div>
+
+          <div>
+            <i class="fa fa-envelope"></i>
+            <span>
+              <h5>info@mooooooo.com</h5>
+              <p>Email us</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="formhandler.php" method="post">
+            <input
+              type="text"
+              name="name"
+              placeholder="ENTER UR NAME"
+              required
+            />
+            <input type="email" name="email placeholder="ENTER UR email"
+            required />
+            <input
+              type="text"
+              name="subject"
+              placeholder="ENTER UR subject"
+              required
+            />
+            <textarea
+              rows="8"
+              name="message"
+              placeholder="message"
+              required
+            ></textarea>
+            <button type="submit" class="hero-btn red-btn">
+              send messages
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!------footer--->
+    <section class="footer">
+      <h4>About us</h4>
+      <p>
+        Lorem ipsum dolor sit, amet <br />consectetur adipisicing elit. modi sed
+        quod totam, eveniet quam?
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made with who?</p>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showmenu() {
+        navLinks.style.right = "0";
+      }
+      function hidemenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
